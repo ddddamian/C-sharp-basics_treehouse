@@ -26,7 +26,12 @@ namespace Treehouse.FitnessFrog
           int minutes = int.Parse(entry);
           
           // Check how many minutes the user has entered and give positive feedback
-          if(minutes <= 10)
+          if(minutes <= 0)
+          {
+            Console.WriteLine(minutes + " is not an acceptable value.");
+            continue;
+          }
+          else if(minutes <= 10)
           {
             Console.WriteLine("Better than nothing, am I right?");
           }
@@ -56,5 +61,3 @@ namespace Treehouse.FitnessFrog
     }
   }
 }
-
-
