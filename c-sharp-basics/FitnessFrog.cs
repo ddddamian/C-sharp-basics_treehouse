@@ -6,6 +6,7 @@ namespace Treehouse.FitnessFrog
   {
     static void Main()
     {
+      // initialise
       int runningTotal = 0;
       bool keepGoing = true;
       
@@ -14,6 +15,7 @@ namespace Treehouse.FitnessFrog
         Console.Write("Enter how many minutes you exercised or type \"quit\" to exit: ");
         string entry = Console.ReadLine();
         
+        // check if the user wants to quit
         if(entry == "quit")
         {
           keepGoing = false;
@@ -22,6 +24,26 @@ namespace Treehouse.FitnessFrog
         {
           // Add minutes exercised to total
           int minutes = int.Parse(entry);
+          
+          // Check how many minutes the user has entered and give positive feedback
+          if(minutes <= 10)
+          {
+            Console.WriteLine("Better than nothing, am I right?");
+          }
+          else if(minutes <= 30)
+          {
+            Console.WriteLine("Way to go hot stuff!");
+          }
+          else if(minutes <= 60)
+          {
+            Console.WriteLine("You must be a ninja warrior in training!");
+          }
+          else
+          {
+            Console.WriteLine("Okay, now you're just showing off!");
+          }
+          
+          // add the minutes entered to the running total
           runningTotal += minutes;
           
           //Display total minutes exercised to the screen
@@ -34,4 +56,5 @@ namespace Treehouse.FitnessFrog
     }
   }
 }
+
 
