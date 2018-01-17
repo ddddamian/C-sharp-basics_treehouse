@@ -1,0 +1,17 @@
+
+About this Course
+
+In this course we'll build on what you learned in C# Basics. 
+You'll learn about Object Oriented Programming (OOP). 
+We'll use OOP to write the code for a tower defense game. 
+After completing this course, you'll have learned most of the syntax of the C# programming language.
+
+What you'll learn
+
+    Core Principles of Object Oriented Programming
+    Classes and Objects
+    Method, Properties, and Fields
+    For Loops
+    Arrays
+    Exceptions
+
