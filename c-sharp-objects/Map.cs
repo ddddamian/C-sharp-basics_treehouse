@@ -17,8 +17,8 @@ namespace TreehouseDefense
     
     public bool OnMap(Point point)
     {
-      return point.x > 0 && point.x < Width && 
-             point.y > 0 && point.y < Height;
+      return point.X > 0 && point.X < Width && 
+             point.Y > 0 && point.Y < Height;
     }
   }
 }
