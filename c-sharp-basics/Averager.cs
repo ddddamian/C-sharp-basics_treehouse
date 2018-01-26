@@ -41,17 +41,17 @@ namespace Treehouse.Averager
         
         try
         {
-          var minutes = double.Parse(entry);
+          var number = double.Parse(entry);
           
           // Check how many minutes the user has entered and give positive feedback
           
           // if a negative number is used, try again
-          if(minutes <= 0)
+          if(number <= 0)
           {
             Console.WriteLine(minutes + " is not an acceptable value.");
             continue;
           }
-          else if(minutes <= 10)
+          else if(number <= 10)
           {
             Console.WriteLine("Better than nothing, am I right?");
           }
