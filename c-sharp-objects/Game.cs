@@ -12,9 +12,17 @@ namespace TreehouseDefense
           {
             MapLocation mapLocation = new MapLocation(20, 20, map);
           }
-          catch(Exception ex)
+          catch(OutOfBoundsException ex)
           {
             Console.WriteLine(ex.Message);
+          }
+          catch(TreehouseDefenseException)
+          {
+            Console.WriteLine("Unhandled TreehouseDefenseException");
+          }
+          catch(Exception)
+          {
+            Console.WriteLine("Unhandled Exception");
           }
         }
     }
