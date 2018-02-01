@@ -25,6 +25,7 @@ namespace Treehouse.Averager
       // initialise
       var runningTotal = 0.0;
       var counter = 0;
+      var average = 0.0;
       
       while(true)
       {
@@ -48,28 +49,16 @@ namespace Treehouse.Averager
           // if a negative number is used, try again
           if(number <= 0)
           {
-            Console.WriteLine(minutes + " is not an acceptable value.");
+            Console.WriteLine("That is not valid input.");
             continue;
-          }
-          else if(number <= 10)
-          {
-            Console.WriteLine("Better than nothing, am I right?");
-          }
-          else if(minutes <= 30)
-          {
-            Console.WriteLine("Way to go hot stuff!");
-          }
-          else if(minutes <= 60)
-          {
-            Console.WriteLine("You must be a ninja warrior in training!");
           }
           else
           {
-            Console.WriteLine("Okay, now you're just showing off!");
+            continue;
           }
           
           // add the minutes entered to the running total
-          runningTotal += minutes;
+          runningTotal += number;
           
           //Display total minutes exercised to the screen
           Console.WriteLine("You've exercised " + runningTotal + " minutes");
@@ -85,6 +74,9 @@ namespace Treehouse.Averager
         
       } 
       // calculate average
+      average = runningTotal / counter;
+      
+      Console.WriteLine("Average: " + average);
     }
   }
 }
