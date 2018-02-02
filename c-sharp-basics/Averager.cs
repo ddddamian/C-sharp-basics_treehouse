@@ -60,8 +60,8 @@ namespace Treehouse.Averager
           // add the minutes entered to the running total
           runningTotal += number;
           
-          //Display total minutes exercised to the screen
-          Console.WriteLine("You've exercised " + runningTotal + " minutes");
+        
+   
           
           // Repeat until the user quits
         }
