@@ -29,12 +29,11 @@ namespace Treehouse.Averager
       
       while(true)
       {
-        counter++;
-        
+        //
         Console.Write("Enter a number or type \"done\" to see the average: ");
         var entry = Console.ReadLine();
         
-        // check if the user wants to quit
+        // check if the user is done
         if(entry.ToLower() == "done")
         {
           break;
@@ -45,7 +44,7 @@ namespace Treehouse.Averager
           var number = double.Parse(entry);
           
           // Check how many minutes the user has entered and give positive feedback
-          
+          counter++;
           // if a negative number is used, try again
           if(number <= 0)
           {
