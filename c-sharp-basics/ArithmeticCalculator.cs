@@ -10,3 +10,36 @@
 //    Repeat until the user types in “quit” at any of the prompts.
 
 //Extra Credit: Add the power operator using the ^ symbol. You can calculate a number raised to a power using the Math.Pow method. 
+
+using System;
+
+namespace ArithmeticCalculator
+{
+  class Calculator
+  {
+    static void Main()
+    {
+      var entry = "";
+      while(entry != "quit")
+      {
+        //    Prompt the user for a number.
+        Console.Write("Please type a number: ");
+        entry = Console.ReadLine();
+        var number1 = entry.
+
+        //    Prompt the user for an operation (+ - / *).
+        Console.Write("Please type a operation (+ - / *): ");
+        var operation = Console.ReadLine();
+
+        //    Prompt the user for another number.
+        Console.Write("Please type another number: ");
+        var number2 = Console.ReadLine();
+
+        //    Perform the operation.
+        var result = number1 + operation + number;
+        //    Print the result to the screen.
+        Console.WriteLine(result);
+      }
+    }
+  }
+}
