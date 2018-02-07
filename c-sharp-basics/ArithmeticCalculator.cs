@@ -29,11 +29,13 @@ namespace ArithmeticCalculator
 
         //    Prompt the user for an operation (+ - / *).
         Console.Write("Please type a operation (+ - / *): ");
-        var operation = Console.ReadLine();
+        entry = Console.ReadLine();
+        var operation = entry;
 
         //    Prompt the user for another number.
         Console.Write("Please type another number: ");
-        var number2 = Console.ReadLine();
+        entry = Console.ReadLine();
+        var number2 = entry;
 
         //    Perform the operation.
         var result = number1 + operation + number;
