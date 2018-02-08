@@ -15,7 +15,7 @@ using System;
 
 namespace ArithmeticCalculator
 {
-  class Calculator
+  class Program
   {
     static void Main()
     {
@@ -25,17 +25,17 @@ namespace ArithmeticCalculator
         //    Prompt the user for a number.
         Console.Write("Please type a number: ");
         entry = Console.ReadLine();
-        var number1 = entry.
+        var number1 = int.parse(entry);
 
         //    Prompt the user for an operation (+ - / *).
-        Console.Write("Please type a operation (+ - / *): ");
+        Console.Write("Please type an operation (+ - / *): ");
         entry = Console.ReadLine();
         var operation = entry;
 
         //    Prompt the user for another number.
         Console.Write("Please type another number: ");
         entry = Console.ReadLine();
-        var number2 = entry;
+        var number2 = int.parse(entry);
 
         //    Perform the operation.
         var result = number1 + operation + number;
