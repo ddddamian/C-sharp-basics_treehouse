@@ -39,6 +39,7 @@ namespace ArithmeticCalculator
 
         //    Perform the operation.
         var result = number1 + operation + number;
+        
         //    Print the result to the screen.
         Console.WriteLine(result);
       }
