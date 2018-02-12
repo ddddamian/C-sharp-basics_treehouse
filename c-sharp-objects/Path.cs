@@ -8,5 +8,17 @@ namespace TreehouseDefense
     {
       _path = path;
     }
+    
+    public GetLocationAt(int pathStep)
+    {
+      if(pathStep < _path.length)
+      {
+        return _path[pathStep];
+      }
+      else
+      {
+        return null;
+      }
+    }
   }
 }
