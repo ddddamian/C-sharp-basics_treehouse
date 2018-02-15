@@ -41,7 +41,11 @@ namespace ArithmeticCalculator
         var result = number1 + operation + number;
         if (operation == '+')
         {
-          result = number 1 + number2;
+          result = number1 + number2;
+        }
+        else if (operation == '-')
+        {
+          result = number1 - number2;
         }
         
         //    Print the result to the screen.
