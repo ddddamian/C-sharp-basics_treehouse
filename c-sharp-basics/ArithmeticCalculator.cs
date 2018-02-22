@@ -55,6 +55,10 @@ namespace ArithmeticCalculator
         {
           result = number1 * number2;
         }
+        else if (operation == '^')
+        {
+          result = number1 Math.Pow(number2);
+        }
         //    Print the result to the screen.
         Console.WriteLine(result);
       }
