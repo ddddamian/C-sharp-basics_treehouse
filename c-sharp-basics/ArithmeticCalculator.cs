@@ -57,7 +57,7 @@ namespace ArithmeticCalculator
         }
         else if (operation == '^')
         {
-          result = number1 Math.Pow(number2);
+          result = Math.Pow(number1, number2);
         }
         //    Print the result to the screen.
         Console.WriteLine(result);
