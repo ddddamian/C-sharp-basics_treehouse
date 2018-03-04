@@ -4,15 +4,18 @@ namespace TreehouseDefense
   {
     private MapLocation _location;
     
-    // method to get location
-    public MapLocation GetLocation()
+    public MapLocation Location
     {
-      return _location;
-    }
-    //method to set location
-    public void SetLocation(MapLocation value)
-    {
-      _location = value;
+      // method to get location
+      get
+      {
+        return _location;
+      }
+      //method to set location
+      set
+      {
+        _location = value;
+      }
     }
   }
 }
