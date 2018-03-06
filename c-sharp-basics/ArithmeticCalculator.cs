@@ -59,6 +59,10 @@ namespace ArithmeticCalculator
         {
           result = Math.Pow(number1, number2);
         }
+        else
+        {
+          continue;
+        }
         //    Print the result to the screen.
         Console.WriteLine(result);
       }
