@@ -1,21 +1,22 @@
 namespace TreehouseDefense
 {
   class Invader
-  {
-    private MapLocation _location;
+  { 
+    private readonly Path _path;
+    private int _pathStep = 0;
     
-    public MapLocation Location
+    public MapLocation Location { get; private set; }
+    
+    public Invader(Path path)
     {
-      // method to get location
-      get
-      {
-        return _location;
-      }
-      //method to set location
-      set
-      {
-        _location = value;
-      }
+      _path = path;
+      Location = _path.GetLocationAt(_pathStep);
+    }
+    
+    public void Move()
+    {
+      _pathStep += 1;     
+      Location = _path.GetLocationAt(_pathStep);
     }
   }
 }
