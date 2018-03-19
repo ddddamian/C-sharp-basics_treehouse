@@ -13,10 +13,13 @@ namespace TreehouseDefense
     {
       
       
-      for(int i = 0; i < invaders.Length; i++)
+      foreach(Invader invader = invaders)
       {
-        Invader invader = invaders[i];
-        // do stuff with invader
+        if(invader.IsActive && _location.InRangeOf(invader.location, 1))
+        {
+          invader.DecreaseHealth(1);
+          break;
+        }
         
       }
     }
