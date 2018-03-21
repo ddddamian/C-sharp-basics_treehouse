@@ -37,7 +37,7 @@ namespace ArithmeticCalculator
         entry = Console.ReadLine();
         var number2 = int.parse(entry);
 
-        //    Perform the operation.
+        //    Perform the operation depending on the operator entered.
         var result = number1 + operation + number;
         if (operation == '+')
         {
